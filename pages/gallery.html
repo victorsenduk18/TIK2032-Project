@@ -34,6 +34,32 @@
             color: black;
             font-weight: bold;
         }
+
+        .photo-gallery {
+            display: grid;
+            width: 50px;
+            height: auto;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .photo {
+            grid-row: 1;
+            transition: transform 0s ease-in-out;
+        }
+
+        footer p {
+            background-color: whitesmoke;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
@@ -53,23 +79,23 @@
         <h2>My pictures</h2>
         <div class="photo-gallery">
             <div class="photo">
-                <img src="../Img/7.jpg" alt="Photo 1" style="width: 300px;">
+                <img src="../Img/7.jpg" alt="Photo 1" style="height: 300px; width: 240px;">
                 <p>Photo 1</p>
             </div>
             <div class="photo">
-                <img src="../Img/4.jpg" alt="Photo 2" style="width: 300px;">
+                <img src="../Img/4.jpg" alt="Photo 2" style="height: 300px; width: 200px;">
                 <p>Photo 2</p>
             </div>
             <div class="photo">
-                <img src="../Img/6.jpg" alt="Photo 3" style="width: 300px;">
+                <img src="../Img/8.jpg" alt="Photo 3" style="height: 300px;">
                 <p>Photo 3</p>
             </div>
             <div class="photo">
-                <img src="../Img/5.jpg" alt="Photo 4" style="width: 300px;">
+                <img src="../Img/5.jpg" alt="Photo 4" style="height: 300px; width: 250px;">
                 <p>Photo 4</p>
             </div>
             <div class="photo">
-                <img src="../Img/8.jpg" alt="Photo 5" style="width: 300px;">
+                <img src="../Img/6.jpg" alt="Photo 5" style="height: 300px; width: 200px;">
                 <p>Photo 5</p>
             </div>
         </div>
