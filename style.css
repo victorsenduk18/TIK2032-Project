@@ -1,0 +1,203 @@
+* {
+    font-family: Arial;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    background-color: beige;
+    padding: 10px;
+}
+
+.header-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-logo img {
+    height: 120px;
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.header-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.header-title a {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.header-title-sub {
+    font-size: 20px;
+    color: darkgreen;
+    margin-top: -1px;
+}
+
+/* Nav Bar */
+
+.nav {
+    background-color: black;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: cadetblue;
+}
+
+/* konten */
+
+.konten {
+    width: 80%;
+    margin: auto;
+}
+
+.konten h1 {
+    color: darkolivegreen;
+    font-size: 35px;
+}
+
+.konten h2 {
+    color: darkgreen;
+    font-size: 22px;
+}
+
+/*portofolio*/
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.project-item img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.project-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-item-desc {
+    font-size: 14px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* tabel */
+
+.tabel {
+    border-spacing: 4px;
+}
+
+.tabel-header {
+    background-color: beige;
+}
+
+.tabel-header th {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabel-konten {
+    background-color: rgb(246, 246, 246);
+}
+
+.tabel-genap {
+    background-color: rgb(238, 238, 238);
+}
+
+.tabel-konten td {
+    padding: 5px 10px 5px 10px;
+}
+
+td>img {
+    width: 100px;
+}
+
+.tabel-konten:hover {
+    background-color: bisque;
+}
+
+/* form */
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+    color: rgb(135, 135, 135);
+}
+
+.form-group input {
+    margin-top: 10px;
+    width: 60%;
+}
+
+.form-group textarea {
+    display: block;
+    margin-top: 10px;
+    height: 200px;
+    width: 60%;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: darkgreen;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn:active {
+    background-color: pink;
+}
