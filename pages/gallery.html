@@ -5,101 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <style>
-        header {
-            background-color: grey;
-            padding: 15px;
-            text-align: center;
-        }
-
-        body {
-            background-color: bisque;
-            padding: 25px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        .photo-gallery {
-            display: grid;
-            width: 50px;
-            height: auto;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 10px;
-        }
-
-        .photo {
-            grid-row: 1;
-            transition: transform 0s ease-in-out;
-        }
-
-        footer p {
-            background-color: whitesmoke;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        p {
-            font-family: 'Arial', sans-serif;
-            font-size: 12px;
-            line-height: 1.5;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Gallery</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="fixed-header">
+        <div class="header">
+            <div class="header-logo">
+                <img src="../Img/1.jpg" alt="logo">
+            </div>
+            <div class="header-title">
+                <a href="index.html">VICTOR OBETNEGO JOHANES SENDUK</a>
+                <p class="header-title-sub">Mahasiswa Teknik Informatika</p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a href="./blog.html">Blog</a></li>
+        <li class="nav-item"><a href="./contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="konten">
         <h2>My pictures</h2>
         <div class="photo-gallery">
             <div class="photo">
-                <img src="../Img/7.jpg" alt="Photo 1" style="height: 300px; width: 240px;">
+                <img src="../Img/4.jpg" alt="Photo 1" style="height: 300px; width: 300px;">
                 <p>Photo 1</p>
             </div>
             <div class="photo">
-                <img src="../Img/4.jpg" alt="Photo 2" style="height: 300px; width: 200px;">
+                <img src="../Img/7.jpg" alt="Photo 2" style="height: 300px; width: 300px;">
                 <p>Photo 2</p>
             </div>
             <div class="photo">
-                <img src="../Img/8.jpg" alt="Photo 3" style="height: 300px;">
+                <img src="../Img/8.jpg" alt="Photo 3" style="height: 300px; width: 300px;">
                 <p>Photo 3</p>
             </div>
             <div class="photo">
-                <img src="../Img/5.jpg" alt="Photo 4" style="height: 300px; width: 250px;">
+                <img src="../Img/5.jpg" alt="Photo 4" style="height: 300px; width: 300px;">
                 <p>Photo 4</p>
             </div>
             <div class="photo">
-                <img src="../Img/6.jpg" alt="Photo 5" style="height: 300px; width: 200px;">
+                <img src="../Img/6.jpg" alt="Photo 5" style="height: 300px; width: 300px;">
                 <p>Photo 5</p>
             </div>
         </div>
-    </main>
+    </div>
     <footer>
         <p>Personal Page -Victor Senduk</p>
     </footer>
