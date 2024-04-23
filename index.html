@@ -4,62 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./Img/logo.jpg">
+
 </head>
 
 <body>
-    <div class="fixed-header">
-        <div class="header">
-            <div class="header-logo">
-                <img src="./Img/1.jpg" alt="logo">
+    <header class="header">
+        <a href="" class="logo">Personal Homepage</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="./pages/gallery.html" style="--i:2">Gallery</a>
+            <a href="./pages/blog.html" style="--i:3">Blog</a>
+            <div class="dropdown" id="contactDropdown">
+                <a href="#" class="contact" style="--i:4">Contact</a>
+                <div class="dropdown-content">
+                    <a href="./pages/contact-list/e-mail.html">E-mail</a>
+                    <a href="./pages/contact-list/wa.html">WhatsApp</a>
+                </div>
             </div>
-            <div class="header-title">
-                <a href="index.html">Victor Obetnego Johanes Senduk</a>
-                <p class="header-title-sub">Mahasiswa Teknik Informatika</p>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, welcome to my Personal Home Page</h3>
+            <h1>Victor Senduk</h1>
+            <h3>I'am <span class="multiple-text" id="mytext"><!--Informatics Engineering Undergraduate--></span>
+            </h3>
+            <p> I am a student of the Informatics Engineering study program at Sam Ratulangi University, Faculty of
+                Engineering. And I am currently in semester 4. I would love to connect with you!</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/vsenduk18/" style="--i:7;"><img src="./Img/logo/facebook-logo-24.png"
+                        alt="facebook-logo"></a>
+                <a href="https://www.instagram.com/vsenduk_/" style="--i:8;"><img
+                        src="./Img/logo/instagram-alt-logo-24.png" alt="instagram-logo"></a>
+                <a href="https://www.linkedin.com/in/victor-senduk-bb076a288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    style="--i:9;"><img src="./Img/logo/linkedin-logo-24.png" alt="linkedin-logo"></a>
+            </div>
+            <div class="home-img">
+                <img src="./Img/home-img.png" alt="home-img">
             </div>
         </div>
 
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="./pages/gallery.html">Gallery</a></li>
-            <li class="nav-item"><a href="./pages/blog.html">Blog</a></li>
-            <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div class="konten">
-
-        <div class="konten-utama">
-            <!-- ini berisi penejalasan tentang sata -->
-        </div>
-
-        <h2>Welcome to My Personal Page</h2>
-        <h3>About Me</h3>
-        <p>Saya adalah Mahasiswa aktif Program Studi Teknik Informatika, Universitas Sam Ratulangi Manado. Dan sekarang
-            saya sedang menempuh di semester 4. </p>
-        <h3>Education</h3>
-        <ul class="pendidikan-list">
-            <li class="pendidikan-sma">
-                <img src="./Img/smansa.png" alt="SMA NEGERI 1 MANADO">
-                <div class="pendidikan-keterangan">
-                    <p class="pendidikan-item-title">SMAN 1 MANADO</p>
-                    <p class="pendidikan-item-desc">MIPA | 2022</p>
-                </div>
-            </li>
-            <li class="pendidikan-item">
-                <img src="./Img/unsrat1.png" alt="Unsrat">
-                <div class="pendidikan-keterangan">
-                    <p class="pendidikan-item-title">UNIVERSITAS SAM RATULANGI</p>
-                    <p class="pendidikan-item-desc">Teknik Informatika | Sedang menempuh</p>
-                </div>
-            </li>
-        </ul>
-
-    </div> <!-- batas konten -->
-
-    <footer>
-        <p>Personal Page - Victor Senduk</p>
-    </footer>
+    </section>
+    <script src="./script/anim-type.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

@@ -1,61 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link rel="icon" href="../Img/logo.jpg">
 </head>
 
 <body>
-    <div class="fixed-header">
-        <div class="header">
-            <div class="header-logo">
-                <img src="../Img/1.jpg" alt="logo">
+
+    <header class="header">
+        <a href="" class="logo">Personal Homepage</a>
+
+        <nav class="navbar">
+            <a href="../index.html" style="--i:1">Home</a>
+            <a href="./gallery.html" style="--i:2" class="active">Gallery</a>
+            <a href="./blog.html" style="--i:3">Blog</a>
+            <div class="dropdown" id="contactDropdown">
+                <a href="#" class="contact" style="--i:4">Contact</a>
+                <div class="dropdown-content">
+                    <a href="./contact-list/e-mail.html">E-mail</a>
+                    <a href="./contact-list/wa.html">WhatsApp</a>
+                </div>
             </div>
-            <div class="header-title">
-                <a href="index.html">VICTOR OBETNEGO JOHANES SENDUK</a>
-                <p class="header-title-sub">Mahasiswa Teknik Informatika</p>
-            </div>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="header-section">
+            <img src="../Img/1.jpg">
+            <h1>Victor's Gallery</h1>
+            <p>This is my Gallery</p>
+        </div>
+
+        <div class="gallery">
+            <!-- Foto-foto Saya -->
+            <div class="gallery-item"><img src="../Img/6.jpg" alt="Foto 1"></div>
+            <div class="gallery-item"><img src="../Img/4.jpg" alt="Foto 2"></div>
+            <div class="gallery-item"><img src="../Img/5.jpg" alt="Foto 3"></div>
+            <div class="gallery-item"><img src="../Img/8.jpg" alt="Foto 4"></div>
+            <div class="gallery-item"><img src="../Img/7.jpg" alt="Foto 5"></div>
+            <!-- Tambahkan lebih banyak div.gallery-item di sini sesuai dengan jumlah foto yang kamu miliki -->
         </div>
     </div>
 
-    <ul class="nav">
-        <li class="nav-item"><a href="../index.html">Home</a></li>
-        <li class="nav-item"><a href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a href="./blog.html">Blog</a></li>
-        <li class="nav-item"><a href="./contact.html">Contact</a></li>
-    </ul>
-    </div>
-    <div class="konten">
-        <h2>My pictures</h2>
-        <div class="photo-gallery">
-            <div class="photo">
-                <img src="../Img/4.jpg" alt="Photo 1" style="height: 300px; width: 300px;">
-                <p>Photo 1</p>
-            </div>
-            <div class="photo">
-                <img src="../Img/7.jpg" alt="Photo 2" style="height: 300px; width: 300px;">
-                <p>Photo 2</p>
-            </div>
-            <div class="photo">
-                <img src="../Img/8.jpg" alt="Photo 3" style="height: 300px; width: 300px;">
-                <p>Photo 3</p>
-            </div>
-            <div class="photo">
-                <img src="../Img/5.jpg" alt="Photo 4" style="height: 300px; width: 300px;">
-                <p>Photo 4</p>
-            </div>
-            <div class="photo">
-                <img src="../Img/6.jpg" alt="Photo 5" style="height: 300px; width: 300px;">
-                <p>Photo 5</p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>Personal Page -Victor Senduk</p>
-    </footer>
+    <script src="../script/anim-type.js"></script>
+    <script src="../script/script.js"></script>
 </body>
+
 
 </html>
