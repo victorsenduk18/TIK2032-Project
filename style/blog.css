@@ -14,13 +14,6 @@
     overflow: hidden;
 }
 
-.header-section img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    object-fit: cover;
-}
-
 .blog-list {
     list-style-type: none;
     padding: 0;
@@ -49,7 +42,7 @@
     width: 400px;
     height: 200px;
     object-fit: cover;
-    border: 1px solid #000;
+    border: 1px solid darkgoldenrod;
     border-radius: 5px;
 }
 

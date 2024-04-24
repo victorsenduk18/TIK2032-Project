@@ -14,15 +14,25 @@ body {
 }
 
 .header {
+    transition: padding 0.3s, background-color 0.3s;
+}
+
+.header.sticky {
+    padding: 10px 12%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background-color: transparent;
+    padding: 15px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    -ms-grid-column-align: center;
     z-index: 100;
 }
 
@@ -34,6 +44,10 @@ body {
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+}
+
+span {
+    color: darkgoldenrod;
 }
 
 .navbar {
@@ -117,7 +131,7 @@ body {
     animation-delay: 2s, 3s;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: -380px;
+    margin-top: -330px;
     /* Add this line */
 }
 

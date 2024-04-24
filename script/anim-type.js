@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var spanText = document.querySelector('.multiple-text');
-    var textArray = ['20 years old', 'a good person ^_^'];
+    var textArray = [' a Informatics Student', ' 20 years old'];
     var currentTextIndex = 0;
 
     function type() {
