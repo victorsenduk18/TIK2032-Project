@@ -2,7 +2,31 @@ document.addEventListener('DOMContentLoaded', function () {
     var spanText = document.querySelector('.multiple-text');
     var textArray = [' a Informatics Student', ' 20 years old'];
     var currentTextIndex = 0;
-
+    var buttons = document.querySelectorAll('.filter-buttons button');
+    var galleryItems = document.querySelectorAll('.gallery-item');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            buttons.forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+            // Menambahkan kelas 'active' ke tombol yang diklik
+            this.classList.add('active');
+            var id = this.id;
+            if (id === 'p1') {
+                galleryItems.forEach(function (item) {
+                    item.style.display = 'block';
+                });
+            } else {
+                galleryItems.forEach(function (item) {
+                    if (item.id === id) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
     function type() {
         var currentText = textArray[currentTextIndex];
         var currentIndex = 0;
@@ -34,3 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     type();
 });
+// script.js
+// Add JavaScript for handling user interactions on Android devices
+// Example: Add specific behavior for touch events or other mobile interactions
+document.addEventListener('DOMContentLoaded', function () {
+    // Add your JavaScript code here for specific interactions on Android devices
+});
+

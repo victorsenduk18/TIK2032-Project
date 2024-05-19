@@ -8,7 +8,10 @@
 }
 
 body {
-    background: black;
+    background-image: url(../Img/logo/bck.png);
+    animation: slide 15s linear infinite;
+    background-size: cover;
+
     color: #fff;
 
 }
@@ -123,6 +126,8 @@ span {
 }
 
 .home-img img {
+    border: 3px solid darkgoldenrod;
+    padding: 10px;
     float: right;
     max-width: 350px;
     margin-right: -400px;
@@ -285,6 +290,21 @@ span {
     }
 }
 
+@keyframes slide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 /* Drop down contact */
 /* Tambahkan gaya untuk dropdown */
 .dropdown {
@@ -352,4 +372,15 @@ span {
 .dropdown:hover .contact {
     background-color: #555;
     color: white;
+}
+
+/* style.css */
+/* Add responsive styles for Android devices */
+@media only screen and (max-width: 600px) {
+
+    /* Add styles for smaller screens, e.g., Android devices */
+    /* Example: Adjust the font size or layout for better display on smaller screens */
+    body {
+        font-size: 14px;
+    }
 }

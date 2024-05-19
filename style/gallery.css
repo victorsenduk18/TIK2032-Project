@@ -19,6 +19,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
+
+    min-height: 100vh;
+    overflow: hidden;
+
 }
 
 .gallery img {
@@ -29,4 +33,35 @@
     box-shadow: 1px 2px 3px darkgoldenrod;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+.filter-buttons {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-buttons button:hover {
+    color: darkgoldenrod;
+    text-shadow: 0 0 25px darkgoldenrod,
+        0 0 50px darkgoldenrod;
+    transition: scale(1.1);
+}
+
+.filter-buttons button.active {
+    background: darkgoldenrod;
+    color: white;
 }
