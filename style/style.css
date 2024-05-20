@@ -18,14 +18,6 @@ body {
 
 .header {
     transition: padding 0.3s, background-color 0.3s;
-}
-
-.header.sticky {
-    padding: 10px 12%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,6 +29,12 @@ body {
     justify-content: space-between;
     -ms-grid-column-align: center;
     z-index: 100;
+
+}
+
+.header.sticky {
+    padding: 10px 12%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .logo {
